@@ -26,7 +26,7 @@ antigen theme robbyrussell
 alias g=git
 
 # Exports
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.node/bin:/usr/local/sbin:$PATH"
 export EDITOR=nano
 
 # Docker env vars
