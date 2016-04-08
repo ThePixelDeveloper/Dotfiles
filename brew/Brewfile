@@ -8,6 +8,7 @@ brew "git-extras"
 brew "git-flow"
 brew "git-stree"
 brew "node", args: ["without-npm"]
+brew "otto"
 brew "packer"
 brew "php56"
 brew "php70"
