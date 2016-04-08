@@ -1,3 +1,6 @@
 [submodule "antigen/antigen"]
 	path = antigen/antigen
 	url = git@github.com:zsh-users/antigen.git
+[submodule "nano/.nano"]
+	path = nano/.nano
+	url = git@github.com:scopatz/nanorc.git
