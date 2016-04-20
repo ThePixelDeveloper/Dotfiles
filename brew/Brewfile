@@ -1,3 +1,5 @@
+tap "homebrew/dupes"
+
 brew "composer"
 brew "docker"
 brew "docker-compose"
