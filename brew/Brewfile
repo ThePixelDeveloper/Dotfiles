@@ -1,5 +1,6 @@
 tap "homebrew/dupes"
 
+brew "dnsmasq"
 brew "composer"
 brew "ffmpeg"
 brew "git"
@@ -20,3 +21,4 @@ brew "symfony-installer"
 brew "wget"
 brew "zsh"
 brew "zsh-completions"
+brew "zsh-syntax-highlighting"
