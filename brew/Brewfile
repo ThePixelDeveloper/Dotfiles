@@ -1,10 +1,6 @@
 tap "homebrew/dupes"
 
 brew "composer"
-brew "docker"
-brew "docker-compose"
-brew "docker-machine"
-brew "docker-machine-driver-xhyve"
 brew "ffmpeg"
 brew "git"
 brew "git-extras"
