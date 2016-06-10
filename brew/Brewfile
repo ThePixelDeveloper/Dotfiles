@@ -11,6 +11,7 @@ brew "git-extras"
 brew "git-flow"
 brew "git-stree"
 brew "git-subrepo"
+brew "imagemagick"
 brew "nano"
 brew "node", args: ["without-npm"]
 brew "nmap"
