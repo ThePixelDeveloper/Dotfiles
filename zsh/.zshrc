@@ -29,9 +29,6 @@ alias g=git
 export PATH="$HOME/.npm-packages/bin:$HOME/.node/bin:/usr/local/sbin:$PATH"
 export EDITOR=nano
 
-# Docker env vars
-eval $(dinghy env)
-
 # Turning off functionality
 unset AUTO_CD
 
