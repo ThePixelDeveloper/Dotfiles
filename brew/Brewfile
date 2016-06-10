@@ -17,7 +17,6 @@ brew "node", args: ["without-npm"]
 brew "nmap"
 brew "otto"
 brew "packer"
-brew "php56"
 brew "php70"
 brew "phploc"
 brew "stow"
