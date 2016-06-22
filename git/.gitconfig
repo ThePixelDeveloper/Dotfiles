@@ -1,9 +1,33 @@
 [user]
         name = Mathew Davies
         email = ThePixelDeveloper@users.noreply.github.com
+
+[github]
+	user = ThePixelDeveloper
+
 [filter "lfs"]
         clean = git-lfs clean %f
         smudge = git-lfs smudge %f
         required = true
+
+[color]
+	ui = true
+	diff = true
+
+[branch]
+	autosetuprebase = always
+
 [push]
-        default = simple
+	default = current
+
+[help]
+	autocorrect = 1
+
+[core]
+	excludesfile = ~/.gitignore
+
+[advice]
+	statusHints = false
+
+[diff]
+	mnemonicprefreix = true
