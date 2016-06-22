@@ -5,6 +5,15 @@
 [github]
 	user = ThePixelDeveloper
 
+[alias]
+	log = log --color
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen%ar%Creset by %C(yellow)%an%Creset' --abbrev-commit
+	dw = diff --color-words
+
 [filter "lfs"]
         clean = git-lfs clean %f
         smudge = git-lfs smudge %f
