@@ -1,7 +1,13 @@
 tap "homebrew/dupes"
+tap "codekitchen/dinghy"
 
 brew "dnsmasq"
 brew "composer"
+brew "dinghy"
+brew "docker"
+brew "docker-compose"
+brew "docker-machine"
+brew "docker-machine-driver-xhyve"
 brew "ffmpeg"
 brew "fswatch"
 brew "git"
