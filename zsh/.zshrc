@@ -32,6 +32,9 @@ export EDITOR=nano
 # Dinghy
 eval $(dinghy env)
 
+# rbenv
+eval "$(rbenv init -)"
+
 # Turning off functionality
 unset AUTO_CD
 
