@@ -19,6 +19,7 @@ brew "imagemagick"
 brew "nano"
 brew "node", args: ["without-npm"]
 brew "nmap"
+brew "nvm"
 brew "otto"
 brew "packer"
 brew "php70"
