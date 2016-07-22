@@ -13,7 +13,6 @@ autoload -U colors && colors
 antigen bundle git
 antigen bundle wd
 antigen bundle osx
-antigen bundle composer
 antigen bundle command-not-found
 
 # Syntax highlighting bundle.
