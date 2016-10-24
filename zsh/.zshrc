@@ -31,13 +31,6 @@ export EDITOR=nano
 # Dinghy
 eval $(dinghy env)
 
-# rbenv
-eval "$(rbenv init -)"
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
-
 # Turning off functionality
 unset AUTO_CD
 
