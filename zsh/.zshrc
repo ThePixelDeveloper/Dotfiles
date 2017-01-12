@@ -27,6 +27,7 @@ alias g=git
 # Exports
 export PATH="$HOME/.node/bin:/usr/local/sbin:$PATH"
 export EDITOR=nano
+export XDEBUG_CONFIG="idekey=PHPSTORM"
 
 # Dinghy
 eval $(dinghy env)
