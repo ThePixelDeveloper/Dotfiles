@@ -30,3 +30,10 @@ brew "xz"
 brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
+
+mas "1Blocker", id: 1107421413
+mas "Amphetamine", id: 937984704
+mas "Byword", id: 420212497
+mas "CloudApp", id: 417602904
+mas "Clear – Tasks, Reminders & To-Do Lists", id: 504544917
+mas "Slack", id: 803453959
