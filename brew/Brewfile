@@ -18,8 +18,11 @@ brew "mas"
 brew "nano"
 brew "nmap"
 brew "php70"
+brew "php70-mcrypt"
 brew "php70-xdebug"
 brew "php71"
+brew "php71-mcrypt"
+brew "php71-xdebug"
 brew "php-cs-fixer"
 brew "python"
 brew "rsync"
@@ -31,9 +34,9 @@ brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
-mas "1Blocker", id: 1107421413
-mas "Amphetamine", id: 937984704
-mas "Byword", id: 420212497
-mas "CloudApp", id: 417602904
-mas "Clear – Tasks, Reminders & To-Do Lists", id: 504544917
-mas "Slack", id: 803453959
+#mas "1Blocker", id: 1107421413
+#mas "Amphetamine", id: 937984704
+#mas "Byword", id: 420212497
+#mas "CloudApp", id: 417602904
+#mas "Clear – Tasks, Reminders & To-Do Lists", id: 504544917
+#mas "Slack", id: 803453959
