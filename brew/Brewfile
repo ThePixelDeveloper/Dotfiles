@@ -3,6 +3,9 @@ tap "homebrew/versions"
 tap "homebrew/homebrew-php"
 tap "codekitchen/dinghy"
 
+cask "java" unless system "/usr/libexec/java_home --failfast"
+
+brew "bfg"
 brew "dinghy"
 brew "docker"
 brew "docker-compose"
