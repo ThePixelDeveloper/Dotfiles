@@ -1,46 +1,43 @@
 [user]
-    name = Mathew Davies
-    email = ThePixelDeveloper@users.noreply.github.com
-    signingkey = BD0A22BD35FBBD6C
+	name = Mathew Davies
+	email = ThePixelDeveloper@users.noreply.github.com
 
 [github]
-    user = ThePixelDeveloper
+	user = ThePixelDeveloper
 
 [alias]
-    log = log --color
-    co = checkout
-    br = branch
-    ci = commit
-    st = status
-    lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen%ar%Creset by %C(yellow)%an%Creset' --abbrev-commit
-    dw = diff --color-words
+	log = log --color
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen%ar%Creset by %C(yellow)%an%Creset' --abbrev-commit
+	dw = diff --color-words
+	up = pull --rebase --autostash
 
 [filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
 
 [color]
-    ui = true
-    diff = true
+	ui = true
+	diff = true
 
 [branch]
-    autosetuprebase = always
+	autosetuprebase = always
 
 [push]
-    default = current
+	default = current
 
 [help]
-    autocorrect = 1
+	autocorrect = 1
 
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 
 [advice]
-    statusHints = false
+	statusHints = false
 
 [diff]
 	mnemonicprefreix = true
-
-[commit]
-	gpgsign = true
