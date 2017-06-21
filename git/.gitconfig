@@ -14,6 +14,7 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen%ar%Creset by %C(yellow)%an%Creset' --abbrev-commit
 	dw = diff --color-words
 	up = pull --rebase --autostash
+	cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|stage' | xargs -n 1 git branch -d"
 
 [filter "lfs"]
 	clean = git-lfs clean %f
