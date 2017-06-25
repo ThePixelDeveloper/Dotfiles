@@ -32,6 +32,10 @@ export XDEBUG_CONFIG="idekey=PHPSTORM"
 # Dinghy
 eval $(dinghy env)
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 # Turning off functionality
 unset AUTO_CD
 
