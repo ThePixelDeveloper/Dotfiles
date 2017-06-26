@@ -1,0 +1,8 @@
+---
+:preferences:
+  :proxy_disabled: true
+  :fsevents_disabled: false
+  :create:
+    provider: virtualbox
+    cpus: 4
+    memory: 2048
