@@ -28,6 +28,7 @@ alias g=git
 export PATH="$HOME/.composer/vendor/bin:$HOME/.node/bin:/usr/local/sbin:$PATH"
 export EDITOR=nano
 export XDEBUG_CONFIG="idekey=PHPSTORM"
+export PHP_IDE_CONFIG="serverName=0.0.0.0"
 
 # Dinghy
 if [ -x "$(command -v dinghy)" ]; then
