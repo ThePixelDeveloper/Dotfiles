@@ -30,11 +30,18 @@ export EDITOR=nano
 export XDEBUG_CONFIG="idekey=PHPSTORM"
 
 # Dinghy
-eval $(dinghy env)
+if [ -x "$(command -v dinghy)" ]; then
+    eval $(dinghy env)
+fi
 
 # NVM
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
+if [ -d "$HOME/.nvm" ]; then
+    export NVM_DIR="$HOME/.nvm"
+fi
+
+if [ -x "$(command -v brew)" ]; then
+    source $(brew --prefix nvm)/nvm.sh
+fi
 
 # Turning off functionality
 unset AUTO_CD
