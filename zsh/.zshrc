@@ -35,6 +35,16 @@ if [ -x "$(command -v dinghy)" ]; then
     eval $(dinghy env)
 fi
 
+# Composer
+if [ -d "$HOME/.config/composer/vendor/bin" ]; then
+    export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+fi
+
+# Spark Installer
+if [ -d "$HOME/Projects/Laravel/spark-installer" ]; then
+    export PATH="$HOME/Projects/Laravel/spark-installer:$PATH"
+fi
+
 # NVM
 if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
