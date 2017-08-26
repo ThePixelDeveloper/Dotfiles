@@ -35,6 +35,11 @@ if [ -x "$(command -v dinghy)" ]; then
     eval $(dinghy env)
 fi
 
+# rbenv
+if [ -x "$(command -v rbenv)" ]; then
+    eval "$(rbenv init -)"
+fi
+
 # Composer
 if [ -d "$HOME/.config/composer/vendor/bin" ]; then
     export PATH="$HOME/.config/composer/vendor/bin:$PATH"
