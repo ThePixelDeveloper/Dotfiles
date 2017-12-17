@@ -5,6 +5,7 @@ tap "caskroom/fonts"
 
 cask "java" unless system "/usr/libexec/java_home --failfast"
 
+brew "autojump"
 brew "bfg"
 brew "ffmpeg"
 cask "font-fira-code"

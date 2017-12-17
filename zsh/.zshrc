@@ -53,6 +53,9 @@ if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
 fi
 
+# Autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 if [ -x "$(command -v brew)" ]; then
     source $(brew --prefix nvm)/nvm.sh
 fi
