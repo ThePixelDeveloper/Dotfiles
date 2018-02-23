@@ -17,7 +17,7 @@ antigen bundle wd
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme robbyrussell
+antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
 # Aliases
 alias g=git
