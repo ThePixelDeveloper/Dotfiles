@@ -37,6 +37,7 @@
 
 [core]
 	excludesfile = /Users/mathewdavies/.gitignore
+	ignorecase = false
 
 [advice]
 	statusHints = false
