@@ -44,5 +44,3 @@
 
 [diff]
 	mnemonicprefreix = true
-[commit]
-	gpgsign = true
