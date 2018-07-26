@@ -11,7 +11,6 @@ autoload -U colors && colors
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
-antigen bundle wd
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -53,12 +52,12 @@ if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
 fi
 
-# Autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-if [ -x "$(command -v brew)" ]; then
+if [ -x "$(command -v brew)" ] && [ -x "$(brew --prefix nvm)/nvm.sh" ]; then
     source $(brew --prefix nvm)/nvm.sh
 fi
+
+# Autojump
+[ -x /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Turning off functionality
 unset AUTO_CD
