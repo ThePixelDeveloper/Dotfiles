@@ -27,16 +27,6 @@ export EDITOR=nano
 export XDEBUG_CONFIG="idekey=PHPSTORM"
 export PHP_IDE_CONFIG="serverName=0.0.0.0"
 
-# Dinghy
-if [ -x "$(command -v dinghy)" ]; then
-    eval $(dinghy env)
-fi
-
-# rbenv
-if [ -x "$(command -v rbenv)" ]; then
-    eval "$(rbenv init -)"
-fi
-
 # Composer
 if [ -d "$HOME/.config/composer/vendor/bin" ]; then
     export PATH="$HOME/.config/composer/vendor/bin:$PATH"
