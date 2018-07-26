@@ -49,6 +49,11 @@ fi
 # Autojump
 [ -x /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
+# PHP 7.1 Paths
+if [ -d "/usr/local/opt/php@7.1/bin" ] && [ -d "/usr/local/opt/php@7.1/sbin" ] ; then
+    export PATH="/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.1/sbin:$PATH"
+fi
+
 # Turning off functionality
 unset AUTO_CD
 
