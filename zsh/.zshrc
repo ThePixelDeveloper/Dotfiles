@@ -47,7 +47,7 @@ if [ -x "$(command -v brew)" ] && [ -x "$(brew --prefix nvm)/nvm.sh" ]; then
 fi
 
 # Autojump
-[ -x /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # PHP 7.1 Paths
 if [ -d "/usr/local/opt/php@7.1/bin" ] && [ -d "/usr/local/opt/php@7.1/sbin" ] ; then
