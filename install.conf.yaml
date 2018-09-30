@@ -5,7 +5,7 @@
 - clean: ['~']
 
 - link:
-    ~/Brewfile: brew/Brewfile
+    ~/.Brewfile: brew/.Brewfile
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore: git/.gitignore
     ~/.nano: nano/.nano
@@ -17,5 +17,6 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [brew bundle --global, Running brew bundle]
     - [antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh, Generating ~/zsh_plugins.sh]
     - [antibody update, Running antibody update]
