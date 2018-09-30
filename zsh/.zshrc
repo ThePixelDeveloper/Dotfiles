@@ -8,6 +8,12 @@ HISTFILE=~/.history
 # Case insensitive matching
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
+# Functions
+update_zsh_plugins () {
+    antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+    antibody update
+}
+
 # Automatic rehashing. This solves the problem of new binaries
 # in the $PATH not being detected automatically.
 zstyle ':completion:*' rehash true
