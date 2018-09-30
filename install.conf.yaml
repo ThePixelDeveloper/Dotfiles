@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/Brewfile: brew/Brewfile
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore: git/.gitignore
+    ~/.nano: nano/.nano
+    ~/.nanorc: nano/.nanorc
+    ~/.aliasrc: zsh/.aliasrc
+    ~/.hushlogin: zsh/.hushlogin
+    ~/.zsh_plugins.txt: zsh/.zsh_plugins.txt
+    ~/.zshrc: zsh/.zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh, Generating ~/zsh_plugins.sh]
+    - [antibody update, Running antibody update]
