@@ -7,6 +7,7 @@ cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "font-fira-code"
 
+brew "ansible"
 brew "antibody"
 brew "awscli"
 brew "exa"
