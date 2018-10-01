@@ -4,4 +4,3 @@
 
 <p align="center"><img src="screenshot-01.png" alt="Neofetch output in the solarized dark theme"></p>
 <p align="center"><img src="screenshot-02.png" alt="Git repository with the branch name and status after the path"></p>
-<p align="center"><img src="screenshot-03.png" alt="Output of ls -l"></p>
