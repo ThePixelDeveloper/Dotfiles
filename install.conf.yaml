@@ -16,7 +16,20 @@
     ~/.zshrc: zsh/.zshrc
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - [brew bundle --global, Running brew bundle]
-    - [antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh, Generating ~/zsh_plugins.sh]
-    - [antibody update, Running antibody update]
+    - description: 'Updating submodules'
+      command: git submodule update --init --recursive
+  
+    - description: 'Installing Homebrew packages'
+      command: brew bundle --global
+  
+    - description: 'Installing ~/zsh_plugins.sh'
+      command: antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+  
+    - description: 'Updating Antibody'
+      command: antibody update
+      
+    - description: 'Installing blackfire-agent service'
+      command: ln -sfv /usr/local/opt/blackfire-agent/*.plist ~/Library/LaunchAgents/
+      
+    - description: 'Starting blackfire-agent service'
+      command: launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.blackfire-agent.plist
