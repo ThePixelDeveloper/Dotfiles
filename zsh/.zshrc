@@ -9,10 +9,23 @@ HISTFILE=~/.history
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # Functions
+dotenv () {
+    set -a
+    [[ -f .env ]] && source .env
+    set +a
+}
+
 update_zsh_plugins () {
     antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
     antibody update
 }
+
+update_brew () {
+    brew update
+    brew upgrade
+    brew doctor
+}
+
 
 # Automatic rehashing. This solves the problem of new binaries
 # in the $PATH not being detected automatically.
@@ -24,6 +37,11 @@ source ~/.zsh_plugins.sh
 # Aliases
 if [[ -r ~/.aliasrc ]]; then
     . ~/.aliasrc
+fi
+
+# Dinghy
+if [ -x "$(command -v dinghy)" ]; then
+    eval $(dinghy env)
 fi
 
 # Exports
