@@ -52,5 +52,9 @@ export GOPATH="$HOME/go"
 export XDEBUG_CONFIG="idekey=PHPSTORM"
 export PHP_IDE_CONFIG="serverName=0.0.0.0"
 
+# Longer AWS sessions
+export AWS_SESSION_TTL=10h
+export AWS_ASSUME_ROLE_TTL=10h
+
 # Turning off functionality
 unset AUTO_CD
