@@ -1,4 +1,1 @@
 alias g=git
-alias ls=exa
-alias k=kubectl
-alias mk=minikube
