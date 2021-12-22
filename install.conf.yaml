@@ -27,9 +27,3 @@
   
     - description: 'Updating Antibody'
       command: antibody update
-      
-    - description: 'Installing blackfire-agent service'
-      command: ln -sfv /usr/local/opt/blackfire-agent/*.plist ~/Library/LaunchAgents/
-      
-    - description: 'Starting blackfire-agent service'
-      command: launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.blackfire-agent.plist
