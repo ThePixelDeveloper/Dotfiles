@@ -27,3 +27,12 @@
   
     - description: 'Updating Antibody'
       command: antibody update
+
+    - description: 'Install node erbium'
+      command: fnm install lts/erbium
+
+    - description: 'Install node gallium'
+      command: fnm install lts/gallium
+
+    - description: 'Install node fermium'
+      command: fnm install lts/fermium && fnm default lts/fermium
